@@ -14,3 +14,13 @@
 .contribution-form .contribution-feedback{color:var(--ink);margin:14px 0 0}
 .contribution-feedback:empty{display:none}
 @media(max-width:650px){.contribution-form{padding:20px 16px}.contribution-form h3{font-size:19px}.contribution-actions{align-items:flex-start;flex-direction:column}.contribution-actions .primary{align-self:flex-end}}
+
+.contribution-prompt{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:14px 0;margin-top:8px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+.contribution-open{border:1px solid var(--ink);padding:9px 16px;background:transparent;color:var(--ink);white-space:nowrap;font-size:12px}
+.contribution-open:hover{background:var(--ink);color:var(--paper)}
+#contribute{padding-bottom:25px}
+#contribution-dialog{padding:34px 26px;max-height:90dvh;overflow-y:auto}
+#contribution-dialog .contribution-form{border:0;margin:0;padding:0;background:none}
+#contribution-dialog .contribution-form h3{padding-right:14px}
+#close-contribution{position:absolute;right:12px;top:8px;border:0;background:none;color:var(--ink);font-size:26px;cursor:pointer}
+@media(max-width:650px){#contribution-dialog{padding:32px 20px}.contribution-prompt{gap:10px;font-size:11px}.contribution-open{padding:9px 12px}}
