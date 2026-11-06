@@ -5,10 +5,15 @@ const clean=t=>t.replace(/^【[^】]+】/,'').replace(/^歷史上的今天[》�
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const category=e=>/中職|中華職棒/.test(e.title)?'中華職棒':/MLB|美國職棒/.test(e.title)?'MLB':'棒球故事';
 const forDate=d=>EVENTS.filter(e=>e.date===key(d));
+
+function contributionForm(id,date=''){
+return `<form class="contribution-form" data-contribution><div class="eyebrow">SHARE YOUR BASEBALL MEMORY</div><h3>${date?esc(date)+'，你記得什麼故事？':'你記得的棒球故事，值得被留下。'}</h3><p>球員生日、經典比賽，或一段難忘的棒球歷史，都歡迎分享。</p><label for="${id}-message">分享你的棒球故事${date?'（'+esc(date)+'）':''}</label><textarea id="${id}-message" name="story" rows="4" maxlength="3000" required placeholder="寫下事件日期、人物與故事；有參考來源也可以一起附上。"></textarea><div class="contribution-actions"><small>示範表單，內容不會傳送或儲存。</small><button class="primary" type="submit">送出投稿 ↗</button></div><p class="contribution-feedback" role="status" aria-live="polite"></p></form>`;
+}
+
 function row(e){return `<button class="event-row" data-event="${e.id}"><span class="event-year">${esc(e.year)}</span><div><h3>${esc(clean(e.title))}</h3><small>${category(e)} · 專欄文章</small></div><span class="arrow">↗</span></button>`}
 $('#hero-month').textContent=`${today.getMonth()+1}月`;$('#hero-day').textContent=String(today.getDate()).padStart(2,'0');$('#hero-week').textContent=today.toLocaleDateString('zh-TW',{weekday:'long'});
-$('#today-label').textContent=key(today);const daily=forDate(today);$('#today-events').innerHTML=daily.length?daily.map(row).join(''):`<div class="empty"><span class="empty-symbol">↗</span><div><h3>這一天的歷史故事，待補上。</h3><p>棒球的記憶還在累積，先翻翻其他日子的經典時刻。</p></div><a href="#stories">探索專欄典藏 ↗</a></div>`;
-function calendar(){const y=view.getFullYear(),m=view.getMonth();$('#month-label').textContent=`${m+1} 月`;let html='';for(let d=1;d<=new Date(y,m+1,0).getDate();d++){const dt=new Date(y,m,d),events=forDate(dt),isSelected=dt.getTime()===selected.getTime();html+=`<button class="day ${events.length?'has-event ':''}${isSelected?'selected ':''}${key(dt)===key(today)?'is-today':''}" data-day="${d}" aria-pressed="${isSelected}" aria-label="${m+1}月${d}日${events.length?'，'+events.length+'篇故事':'，尚無收錄'}">${d}</button>`}$('#calendar-grid').innerHTML=html;$('#selected-heading').textContent=`${selected.getMonth()+1} 月 ${selected.getDate()} 日 · 當日故事`;const entries=forDate(selected);$('#selected-events').innerHTML=entries.length?entries.map(row).join(''):'<p class="calendar-empty">這一天尚未收錄故事。選擇有紅點的日期，讀一段棒球歷史。</p>'}
+$('#today-label').textContent=key(today);const daily=forDate(today);$('#today-events').innerHTML=daily.length?daily.map(row).join(''):`<div class="empty"><span class="empty-symbol">↗</span><div><h3>這一天的歷史故事，待補上。</h3><p>棒球的記憶還在累積，先翻翻其他日子的經典時刻。</p></div><a href="#stories">探索專欄典藏 ↗</a></div>${contributionForm('today-contribution',key(today))}`;
+function calendar(){const y=view.getFullYear(),m=view.getMonth();$('#month-label').textContent=`${m+1} 月`;let html='';for(let d=1;d<=new Date(y,m+1,0).getDate();d++){const dt=new Date(y,m,d),events=forDate(dt),isSelected=dt.getTime()===selected.getTime();html+=`<button class="day ${events.length?'has-event ':''}${isSelected?'selected ':''}${key(dt)===key(today)?'is-today':''}" data-day="${d}" aria-pressed="${isSelected}" aria-label="${m+1}月${d}日${events.length?'，'+events.length+'篇故事':'，尚無收錄'}">${d}</button>`}$('#calendar-grid').innerHTML=html;$('#selected-heading').textContent=`${selected.getMonth()+1} 月 ${selected.getDate()} 日 · 當日故事`;const entries=forDate(selected);$('#selected-events').innerHTML=entries.length?entries.map(row).join(''):`<p class="calendar-empty">這一天尚未收錄故事。歡迎分享你知道的棒球歷史。</p>${contributionForm('calendar-contribution',key(selected))}`}
 $('#calendar-grid').addEventListener('click',e=>{const b=e.target.closest('[data-day]');if(b){selected=new Date(view.getFullYear(),view.getMonth(),+b.dataset.day);calendar()}});
 $('#prev').onclick=()=>{view=new Date(calendarYear,(view.getMonth()+11)%12,1);calendar()};$('#next').onclick=()=>{view=new Date(calendarYear,(view.getMonth()+1)%12,1);calendar()};function reset(){selected=new Date(calendarYear,today.getMonth(),today.getDate());view=new Date(calendarYear,today.getMonth(),1);calendar()}$('#cal-today').onclick=reset;$('#return-today').onclick=()=>{reset();$('#calendar').scrollIntoView({behavior:'smooth'})};
 const months=[...new Set(EVENTS.map(e=>e.date.slice(0,2)))].sort();months.forEach(m=>$('#month-filter').insertAdjacentHTML('beforeend',`<option value="${m}">${+m} 月</option>`));
@@ -18,3 +23,16 @@ document.addEventListener('click',ev=>{const b=ev.target.closest('[data-event]')
 for(const a of document.querySelectorAll('nav a'))a.addEventListener('click',()=>{document.querySelectorAll('nav a').forEach(x=>x.classList.remove('active'));a.classList.add('active')});
 setInterval(()=>{if(new Date().toDateString()!==today.toDateString())location.reload()},60000);
 calendar();stories();
+
+$('#contribute').innerHTML=contributionForm('footer-contribution');
+document.addEventListener('submit',event=>{
+ const form=event.target.closest('[data-contribution]');if(!form)return;
+ event.preventDefault();
+ const input=form.querySelector('textarea');
+ if(!input.value.trim()){input.setCustomValidity('請先寫下你想分享的棒球故事。');input.reportValidity();return;}
+ input.setCustomValidity('');
+ form.querySelector('.contribution-feedback').textContent='這是示範表單，投稿尚未傳送或儲存。你可以繼續編輯內容。';
+});
+document.addEventListener('input',event=>{
+ if(event.target.matches('[data-contribution] textarea')){event.target.setCustomValidity('');event.target.closest('form').querySelector('.contribution-feedback').textContent='';}
+});
