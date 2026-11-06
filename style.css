@@ -41,3 +41,10 @@ h2{letter-spacing:.3px}
 .channel-link:hover{border-color:var(--red);color:var(--red)}
 .channel-link svg{width:20px;height:20px;flex-shrink:0}
 @media(max-width:650px){.brand-logo{width:38px;height:38px}.closing.channel-section{gap:16px;align-items:flex-start;flex-wrap:wrap}.channel-logo{width:64px;height:64px}.channel-section h2{font-size:21px}.channel-links{flex-direction:column}.channel-link{justify-content:flex-start}}
+
+.hero-foot{justify-content:flex-end}
+footer{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:20px}
+footer>.brand{justify-self:start}
+footer>p{text-align:center;margin:0}
+footer>a:last-child{justify-self:end}
+@media(max-width:650px){footer{grid-template-columns:minmax(0,1fr) auto;gap:16px}footer>p{grid-column:1/-1;grid-row:2;width:100%}footer>a:last-child{grid-column:2;grid-row:1}}
