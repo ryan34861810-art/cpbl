@@ -10,7 +10,7 @@ const EVENTS = [
     "id": 1,
     "year": "1999",
     "date": "08/17",
-    "title": "歷史上的今天》澄清湖球場中職初登板！",
+    "title": "歷史上的今天》澄清湖球場中職首場比賽",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A9%E6%BE%84%E6%B8%85%E6%B9%96%E7%90%83%E5%A0%B4%E4%B8%AD%E8%81%B7%E5%88%9D%E7%99%BB%E6%9D%BF%E5%A4%A9%E6%89%8D%E5%B0%8F%E5%8F%B2%E7%B0%BD%E4%B8%8B%E5%8F%B2%E4%B8%8A%E6%9C%80%E9%AB%98%E6%96%B0%E7%A7%80%E5%90%88%E7%B4%84/15tzq698a1ry21tnh7g3va4jvh"
   },
   {
@@ -24,7 +24,7 @@ const EVENTS = [
     "id": 2,
     "year": "2004",
     "date": "08/21",
-    "title": "歷史上的今天》2004雅典奧運　陳金鋒砲轟上原浩治3分彈！",
+    "title": "歷史上的今天》雅典奧運　陳金鋒砲轟上原浩治3分彈！",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A92004-%E9%9B%85%E5%85%B8%E5%A5%A7%E9%81%8B%E9%99%B3%E9%87%91%E9%8B%92%E7%A0%B2%E8%BD%9F%E4%B8%8A%E5%8E%9F%E6%B5%A9%E6%B2%BB3%E5%88%86%E5%BD%88/gi3qjqjk4eat14xydewhgb9nz"
   },
   {
@@ -52,7 +52,7 @@ const EVENTS = [
     "id": 6,
     "year": "1984",
     "date": "09/01",
-    "title": "【中職】歷史上的今天》兄弟飯店棒球隊成立　台灣職棒傳奇的起點｜中華職棒",
+    "title": "【中職】歷史上的今天》兄弟飯店棒球隊成立　台灣職棒傳奇球隊的起點｜中華職棒",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/%E4%B8%AD%E8%81%B7%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A9%E5%85%84%E5%BC%9F%E9%A3%AF%E5%BA%97%E6%A3%92%E7%90%83%E9%9A%8A%E6%88%90%E7%AB%8B%E5%8F%B0%E7%81%A3%E8%81%B7%E6%A3%92%E5%82%B3%E5%A5%87%E7%9A%84%E8%B5%B7%E9%BB%9E%E4%B8%AD%E8%8F%AF%E8%81%B7%E6%A3%92/1q16rxz1h6d3g18ejxc4bs32g2"
   },
   {
@@ -66,7 +66,7 @@ const EVENTS = [
     "id": 8,
     "year": "1993",
     "date": "09/04",
-    "title": "【MLB】歷史上的今天》大聯盟最勵志一役！獨臂左投 Jim Abbott 投出無安打比賽｜美國職棒",
+    "title": "【MLB】歷史上的今天》獨臂左投 Jim Abbott 投出無安打比賽｜美國職棒",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/mlb%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A9%E5%A4%A7%E8%81%AF%E7%9B%9F%E6%9C%80%E5%8B%B5%E5%BF%97%E4%B8%80%E5%BD%B9%E7%8D%A8%E8%87%82%E5%B7%A6%E6%8A%95-jim-abbott-%E6%8A%95%E5%87%BA%E7%84%A1%E5%AE%89%E6%89%93%E6%AF%94%E8%B3%BD%E7%BE%8E%E5%9C%8B%E8%81%B7%E6%A3%92/20qly3hwvr5i1c3ahws2ejchq"
   },
   {
@@ -87,7 +87,7 @@ const EVENTS = [
     "id": 11,
     "year": "1990",
     "date": "09/14",
-    "title": "【MLB】歷史上的今天》Griffey 父子背靠背開轟，MLB 最浪漫的一場比賽｜美國職棒",
+    "title": "【MLB】歷史上的今天》Griffey 父子背靠背開轟｜美國職棒",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/mlb%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A9griffey-%E7%88%B6%E5%AD%90%E8%83%8C%E9%9D%A0%E8%83%8C%E9%96%8B%E8%BD%9Fmlb-%E6%9C%80%E6%B5%AA%E6%BC%AB%E7%9A%84%E4%B8%80%E5%A0%B4%E6%AF%94%E8%B3%BD%E7%BE%8E%E5%9C%8B%E8%81%B7%E6%A3%92/11xzfy3s1wxlo1cq54z4bf7ye6"
   },
   {
@@ -101,7 +101,7 @@ const EVENTS = [
     "id": 13,
     "year": "2016",
     "date": "09/18",
-    "title": "【中職】歷史上的今天》陳金鋒引退十週年｜中華職棒",
+    "title": "【中職】歷史上的今天》陳金鋒於中華職棒引退｜中華職棒",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/%E4%B8%AD%E8%81%B7%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A9%E9%99%B3%E9%87%91%E9%8B%92%E5%BC%95%E9%80%80%E5%8D%81%E9%80%B1%E5%B9%B4%E4%B8%AD%E8%8F%AF%E8%81%B7%E6%A3%92/eyyr92c27p11vpl1h0466pko"
   },
   {
@@ -115,21 +115,21 @@ const EVENTS = [
     "id": 15,
     "year": "2017",
     "date": "09/24",
-    "title": "【日職】歷史上的今天》最完美的告別！42 歲井口資仁引退賽敲 9 局追平轟！｜日本職棒",
+    "title": "【日職】歷史上的今天》42 歲井口資仁引退賽敲 9 局追平轟！｜日本職棒",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/%E6%97%A5%E8%81%B7%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A9%E6%9C%80%E5%AE%8C%E7%BE%8E%E7%9A%84%E5%91%8A%E5%88%A542-%E6%AD%B2%E4%BA%95%E5%8F%A3%E8%B3%87%E4%BB%81%E5%BC%95%E9%80%80%E8%B3%BD%E6%95%B2-9-%E5%B1%80%E8%BF%BD%E5%B9%B3%E8%BD%9F%E6%97%A5%E6%9C%AC%E8%81%B7%E6%A3%92/7212o0azoko1gzip2i0h50xz"
   },
   {
     "id": 16,
     "year": "1936",
     "date": "09/25",
-    "title": "【日職】歷史上的今天》澤村賞背後的傳奇！日職第一場無安打比賽｜日本職棒",
+    "title": "【日職】歷史上的今天》「澤村賞本人」投出日職第一場無安打比賽｜日本職棒",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/%E6%97%A5%E8%81%B7%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A9%E6%BE%A4%E6%9D%91%E8%B3%9E%E8%83%8C%E5%BE%8C%E7%9A%84%E5%82%B3%E5%A5%87%E6%97%A5%E8%81%B7%E7%AC%AC%E4%B8%80%E5%A0%B4%E7%84%A1%E5%AE%89%E6%89%93%E6%AF%94%E8%B3%BD%E6%97%A5%E6%9C%AC%E8%81%B7%E6%A3%92/qo2wk5j19ai51c7vhi6rgc9xc"
   },
   {
     "id": 17,
     "year": "2016",
     "date": "09/26",
-    "title": "【MLB】歷史上的今天》再也止不住的眼淚，Dee Gordon 為 José Fernández 開轟｜美國職棒",
+    "title": "【MLB】歷史上的今天》Dee Gordon 於 José Fernández 逝世隔日開轟｜美國職棒",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/mlb%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A9%E5%86%8D%E4%B9%9F%E6%AD%A2%E4%B8%8D%E4%BD%8F%E7%9A%84%E7%9C%BC%E6%B7%9Adee-gordon-%E7%82%BA-jose-fernandez-%E9%96%8B%E8%BD%9F%E7%BE%8E%E5%9C%8B%E8%81%B7%E6%A3%92/68q1ltp1g7z71e3gp0di8d10k"
   },
   {
@@ -143,14 +143,14 @@ const EVENTS = [
     "id": 19,
     "year": "1941",
     "date": "09/28",
-    "title": "【MLB】歷史上的今天》從不畏戰的傳奇　Ted Williams 的 .406 打擊率為何偉大｜美國職棒",
+    "title": "【MLB】歷史上的今天》Ted Williams 把 MLB 打擊率紀錄推上 .406 ｜美國職棒",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/mlb%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A9%E5%BE%9E%E4%B8%8D%E7%95%8F%E6%88%B0%E7%9A%84%E5%82%B3%E5%A5%87ted-williams-%E7%9A%84-406-%E6%89%93%E6%93%8A%E7%8E%87%E7%82%BA%E4%BD%95%E5%81%89%E5%A4%A7%E7%BE%8E%E5%9C%8B%E8%81%B7%E6%A3%92/il0j8lzwceh71o0i5tlv1aaia"
   },
   {
     "id": 20,
     "year": "2019",
     "date": "09/29",
-    "title": "【中職】歷史上的今天》20,223 人送別恰恰！彭政閔引退賽｜中華職棒",
+    "title": "【中職】歷史上的今天》20,223 人送別恰恰！彭政閔中職引退賽｜中華職棒",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/%E4%B8%AD%E8%81%B7%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A920223-%E4%BA%BA%E9%80%81%E5%88%A5%E6%81%B0%E6%81%B0%E5%BD%AD%E6%94%BF%E9%96%94%E5%BC%95%E9%80%80%E8%B3%BD%E4%B8%AD%E8%8F%AF%E8%81%B7%E6%A3%92/1gcm406qn0bbd14dfd2tv3op8r"
   },
   {
@@ -164,7 +164,7 @@ const EVENTS = [
     "id": 22,
     "year": "1961",
     "date": "10/01",
-    "title": "【MLB】歷史上的今天》超越Babe Ruth的第61轟　Roger Maris為何仍受質疑？｜美國職棒",
+    "title": "【MLB】歷史上的今天》Roger Maris 擊出超越 Babe Ruth 的第61轟｜美國職棒",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/mlb%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A9%E8%B6%85%E8%B6%8Ababe-ruth%E7%9A%84%E7%AC%AC61%E8%BD%9Froger-maris%E7%82%BA%E4%BD%95%E4%BB%8D%E5%8F%97%E8%B3%AA%E7%96%91%E7%BE%8E%E5%9C%8B%E8%81%B7%E6%A3%92/d06ozlhllv8q1v5ysp6m34r2z"
   },
   {
@@ -178,14 +178,14 @@ const EVENTS = [
     "id": 24,
     "year": "2001",
     "date": "10/05",
-    "title": "【MLB】歷史上的今天》超越 70 轟的那一球！Barry Bonds 在朴贊浩面前改寫紀錄｜美國職棒",
+    "title": "【MLB】歷史上的今天》Barry Bonds 從朴贊浩手中敲出第 71 轟｜美國職棒",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/mlb%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A9%E8%B6%85%E8%B6%8A-70-%E8%BD%9F%E7%9A%84%E9%82%A3%E4%B8%80%E7%90%83barry-bonds-%E5%9C%A8%E6%9C%B4%E8%B4%8A%E6%B5%A9%E9%9D%A2%E5%89%8D%E6%94%B9%E5%AF%AB%E7%B4%80%E9%8C%84%E7%BE%8E%E5%9C%8B%E8%81%B7%E6%A3%92/19aaqs5vy9guaz76so9ynd3m2"
   },
   {
     "id": 25,
     "year": "2010",
     "date": "10/06",
-    "title": "【MLB】歷史上的今天》等了 13 年的季後賽　Roy Halladay 第一場就無安打！｜美國職棒",
+    "title": "【MLB】歷史上的今天》Roy Halladay 生涯首場季後賽無安打｜美國職棒",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/mlb%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A9%E7%AD%89%E4%BA%86-13-%E5%B9%B4%E7%9A%84%E5%AD%A3%E5%BE%8C%E8%B3%BDroy-halladay-%E7%AC%AC%E4%B8%80%E5%A0%B4%E5%B0%B1%E7%84%A1%E5%AE%89%E6%89%93%E7%BE%8E%E5%9C%8B%E8%81%B7%E6%A3%92/vpgk3yyjroh21run4e42ss7iu"
   },
   {
@@ -206,14 +206,14 @@ const EVENTS = [
     "id": 28,
     "year": "2017",
     "date": "10/11",
-    "title": "【MLB】歷史上的今天》讓二追三！DiDi Gregorius雙響砲擊潰賽揚　洋基力克印地安人驚險晉級｜美國職棒",
+    "title": "【MLB】歷史上的今天》讓二追三！DiDi Gregorius雙響砲帶領洋基力克印地安人驚險晉級｜美國職棒",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/mlb%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A9%E8%AE%93%E4%BA%8C%E8%BF%BD%E4%B8%89didi-gregorius%E9%9B%99%E9%9F%BF%E7%A0%B2%E6%93%8A%E6%BD%B0%E8%B3%BD%E6%8F%9A%E6%B4%8B%E5%9F%BA%E5%8A%9B%E5%85%8B%E5%8D%B0%E5%9C%B0%E5%AE%89%E4%BA%BA%E9%A9%9A%E9%9A%AA%E6%99%89%E7%B4%9A%E7%BE%8E%E5%9C%8B%E8%81%B7%E6%A3%92/e10mc86rb63614n0dga3bjy8j"
   },
   {
     "id": 29,
     "year": "2015",
     "date": "10/12",
-    "title": "【中職】歷史上的今天》最後一次機會！林智勝跑出中職第一個 30–30｜中華職棒",
+    "title": "【中職】歷史上的今天》林智勝完成中職第一個 30–30｜中華職棒",
     "url": "https://www.dazn.com/zh-TW/news/%E6%A3%92%E7%90%83/%E4%B8%AD%E8%81%B7%E6%AD%B7%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BB%8A%E5%A4%A9%E6%9C%80%E5%BE%8C%E4%B8%80%E6%AC%A1%E6%A9%9F%E6%9C%83%E6%9E%97%E6%99%BA%E5%8B%9D%E8%B7%91%E5%87%BA%E4%B8%AD%E8%81%B7%E7%AC%AC%E4%B8%80%E5%80%8B-30-30%E4%B8%AD%E8%8F%AF%E8%81%B7%E6%A3%92/176qhfc1ak1yw1mq4m28wik9a5"
   },
   {
