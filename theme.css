@@ -1,0 +1,32 @@
+
+/* Appearance is resolved before the page paints by theme.js. */
+:root{color-scheme:light;--surface:#ffffff;--text-on-brand:#ffffff}
+.appearance-control{display:flex;align-items:center;gap:7px;margin-left:auto;align-self:flex-start;flex-shrink:0}
+.appearance-control>svg{width:18px;height:18px;flex-shrink:0}
+.appearance-control select{border:1px solid var(--line);background:var(--paper);color:var(--ink);font-family:inherit;font-size:11px;line-height:1.5;padding:9px 7px;border-radius:10px;max-width:185px;min-height:38px}
+html[data-theme="dark"]{--paper:#10171e;--surface:#18232d;--ink:#edf4f7;--muted:#abb9c2;--line:#34434f;--red:#ff7859;--green:#034652;color-scheme:dark}
+html[data-theme="dark"] body{background:var(--paper);color:var(--ink)}
+html[data-theme="dark"] .hero-copy>p{color:var(--muted)}
+html[data-theme="dark"] .empty,html[data-theme="dark"] .calendar-box,html[data-theme="dark"] .contribution-form,html[data-theme="dark"] .channel-link,html[data-theme="dark"] .author-section,html[data-theme="dark"] .diary-date{background:var(--surface)}
+html[data-theme="dark"] .contribution-form textarea,html[data-theme="dark"] .search input,html[data-theme="dark"] select{color:var(--ink)}
+html[data-theme="dark"] input::placeholder,html[data-theme="dark"] textarea::placeholder{color:#97a8b3;opacity:1}
+html[data-theme="dark"] .day{border-top-color:var(--line)}
+html[data-theme="dark"] .day:not(:disabled):hover{background:#263642}
+html[data-theme="dark"] .day.selected,html[data-theme="dark"] .day.selected:hover{background:#0a6073;color:#ffffff}
+html[data-theme="dark"] .primary,html[data-theme="dark"] .contribution-prompt .contribution-open{background:#034652;border-color:#387589;color:#ffffff}
+html[data-theme="dark"] .primary:hover,html[data-theme="dark"] .contribution-prompt .contribution-open:hover{background:#0a6073}
+html[data-theme="dark"] .content-hero,html[data-theme="dark"] .video-section,html[data-theme="dark"] .scorecard{background:#04323e;color:#ffffff}
+html[data-theme="dark"] .content-hero h1,html[data-theme="dark"] .video-copy h2{color:#ffffff}
+html[data-theme="dark"] .video-cta{background:#d53c17;color:#ffffff}
+html[data-theme="dark"] .video-cta:hover{background:#b93112}
+html[data-theme="dark"] .video-mark{color:#ff7859}
+html[data-theme="dark"] .hero-play{color:#ffffff}
+html[data-theme="dark"] .play-circle{background:#d53c17;color:#ffffff}
+html[data-theme="dark"] header .header-navigation .page-switcher{background:var(--surface);border-color:#ff7859}
+html[data-theme="dark"] header .page-switcher:before{background:#d53c17}
+html[data-theme="dark"] header .header-navigation .page-switcher a{color:#ff9b83}
+html[data-theme="dark"] header .header-navigation .page-switcher a.current{color:#ffffff}
+html[data-theme="dark"] dialog{background:var(--surface)}
+html[data-theme="dark"] dialog::backdrop{background:#000000b8}
+@media(max-width:1000px){header:has(.appearance-control){flex-wrap:wrap;gap:20px}.appearance-control{order:2}.header-navigation{order:3;width:100%}.content-home .header-navigation nav{order:initial}}
+@media(max-width:650px){.appearance-control{gap:4px}.appearance-control select{font-size:10px;max-width:155px;padding:8px 5px}.appearance-control>svg{width:16px;height:16px}header:has(.appearance-control)>.brand{font-size:20px}header:has(.appearance-control)>.brand .brand-en{display:none}header:has(.appearance-control){gap:16px 8px}}
