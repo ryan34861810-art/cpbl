@@ -48,3 +48,5 @@ footer>.brand{justify-self:start}
 footer>p{text-align:center;margin:0}
 footer>a:last-child{justify-self:end}
 @media(max-width:650px){footer{grid-template-columns:minmax(0,1fr) auto;gap:16px}footer>p{grid-column:1/-1;grid-row:2;width:100%}footer>a:last-child{grid-column:2;grid-row:1}}
+
+header:has(.content-switch){gap:28px}header:has(.content-switch) nav{gap:22px}.content-switch{font-weight:800;white-space:nowrap}@media(max-width:1120px){header:has(.content-switch) .header-note{display:none}}@media(max-width:650px){header:has(.content-switch) nav{gap:10px;font-size:11px}}
