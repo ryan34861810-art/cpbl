@@ -36,3 +36,19 @@
 .player-wrap iframe{overflow:hidden}
 .diary-date,.cover-wrap,.host-list span{border-radius:var(--radius-control)}
 .content-home .primary,.secondary-link{border-radius:var(--radius-control)}
+
+/* Lead with the show's own introduction */
+.content-hero{padding-top:0}
+.content-hero h1{font-size:43px;line-height:1.5;letter-spacing:0;margin:0 0 20px}
+.content-hero-copy{max-width:650px}
+.content-hero-copy>p{font-size:14px;line-height:2;margin:0 0 14px;max-width:580px}
+.masthead-body{padding:40px 0;gap:40px}
+.masthead-art{width:27%;max-width:260px;box-shadow:none;border-radius:var(--radius-card);margin-right:0}
+.podcast-note h3{font-size:20px;margin-top:0}
+.podcast-section .section-heading{margin-bottom:22px}
+.author-section{justify-content:flex-start}
+.author-section .primary,.video-copy .video-cta{margin-top:auto}
+.video-copy{display:flex;flex:1;flex-direction:column;align-items:flex-start}
+.video-copy h2{margin-top:0}
+@media(max-width:900px){.content-hero h1{font-size:35px}.content-hero-copy>p{font-size:13px}.masthead-body{gap:25px}}
+@media(max-width:650px){.content-hero h1{font-size:30px;line-height:1.5}.content-hero-copy>p{font-size:13px;line-height:2}.masthead-body{padding:27px 0;gap:25px}.masthead-art{width:120px;align-self:flex-start;margin:0}.podcast-note h3{font-size:19px}}
