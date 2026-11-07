@@ -21,6 +21,18 @@
     mode = allowed.includes(event.newValue) ? event.newValue : 'auto';
     apply();
   });
+  function restoreMode() {
+    try {
+      var persisted = localStorage.getItem(key);
+      mode = allowed.includes(persisted) ? persisted : 'auto';
+    } catch (_) {}
+    apply();
+  }
+  window.addEventListener('pageshow', restoreMode);
+  window.addEventListener('focus', restoreMode);
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'visible') restoreMode();
+  });
   apply();
   document.addEventListener('DOMContentLoaded', function () {
     apply();
