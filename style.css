@@ -50,3 +50,14 @@ footer>a:last-child{justify-self:end}
 @media(max-width:650px){footer{grid-template-columns:minmax(0,1fr) auto;gap:16px}footer>p{grid-column:1/-1;grid-row:2;width:100%}footer>a:last-child{grid-column:2;grid-row:1}}
 
 header:has(.content-switch){gap:28px}header:has(.content-switch) nav{gap:22px}.content-switch{font-weight:800;white-space:nowrap}@media(max-width:1120px){header:has(.content-switch) .header-note{display:none}}@media(max-width:650px){header:has(.content-switch) nav{gap:10px;font-size:11px}}
+
+header:has(.header-navigation){align-items:center;gap:32px}
+.header-navigation{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+header .page-switcher{display:flex;gap:0;border:1px solid var(--line);padding:3px;background:#eeece3;font-size:12px}
+header .page-switcher a{padding:9px 20px;border:0;font-weight:700}
+header .page-switcher a.current{background:var(--ink);color:var(--paper)}
+header .page-switcher a:hover{border:0}
+header .section-navigation{display:flex;gap:25px;font-size:12px}
+header:has(.header-navigation) .header-note{font-size:10px}
+@media(max-width:1050px){header:has(.header-navigation) .header-note{display:none}}
+@media(max-width:650px){header:has(.header-navigation){gap:18px}.header-navigation{width:100%;gap:12px}.content-home .header-navigation nav,header .header-navigation nav{order:initial;width:auto;justify-content:flex-start}.content-home .header-navigation .section-navigation,header .header-navigation .section-navigation{width:100%;gap:15px;justify-content:space-between;font-size:11px}header .page-switcher a{padding:8px 20px}}
