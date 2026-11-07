@@ -117,3 +117,19 @@ header .header-navigation .page-switcher a:hover{border:0}
 .date-big{height:181px}
 @media(max-width:900px){.scorecard{min-height:400px}}
 @media(max-width:650px){.scorecard{min-height:350px}.date-big{height:145px}.scorecard .field{height:170px}}
+
+/* Frosted archive cards */
+#story-grid{position:relative;isolation:isolate;gap:28px;padding:20px 12px 24px;background:radial-gradient(ellipse at 12% 24%,rgba(3,70,82,.09),transparent 42%),radial-gradient(ellipse at 88% 75%,rgba(227,67,21,.065),transparent 40%);border-radius:24px}
+#story-grid .story{position:relative;padding:24px;min-height:245px;border:1px solid rgba(3,70,82,.12);border-radius:20px;background:rgba(255,255,255,.66);box-shadow:0 9px 28px rgba(3,35,48,.06),inset 0 1px 0 rgba(255,255,255,.95);backdrop-filter:blur(18px) saturate(130%);-webkit-backdrop-filter:blur(18px) saturate(130%);transform:rotate(-1.2deg);transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+#story-grid .story:nth-child(2n){transform:rotate(1.2deg)}
+#story-grid .story:nth-child(3n){transform:rotate(-.6deg)}
+#story-grid .story:hover,#story-grid .story:focus-visible{z-index:1;transform:rotate(0deg) translateY(-5px);box-shadow:0 16px 34px rgba(3,35,48,.12),inset 0 1px 0 rgba(255,255,255,.95);border-color:rgba(227,67,21,.35)}
+#story-grid .story:focus-visible{outline:2px solid var(--red);outline-offset:4px}
+#story-grid .story h3{margin:19px 0 25px}
+html[data-theme="dark"] #story-grid{background:radial-gradient(ellipse at 12% 24%,rgba(61,157,184,.17),transparent 42%),radial-gradient(ellipse at 88% 75%,rgba(227,67,21,.13),transparent 40%)}
+html[data-theme="dark"] #story-grid .story{background:rgba(24,35,45,.64);border-color:rgba(192,220,235,.17);box-shadow:0 9px 28px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.09)}
+html[data-theme="dark"] #story-grid .story:hover,html[data-theme="dark"] #story-grid .story:focus-visible{border-color:rgba(255,120,89,.5);box-shadow:0 16px 34px rgba(0,0,0,.28)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){#story-grid .story{background:rgba(255,255,255,.94)}html[data-theme="dark"] #story-grid .story{background:rgba(24,35,45,.96)}}
+@media(max-width:650px){#story-grid{gap:20px 15px;padding:14px 5px 20px}#story-grid .story{padding:18px 15px;min-height:250px;transform:rotate(-.5deg);border-radius:16px}#story-grid .story:nth-child(2n){transform:rotate(.5deg)}#story-grid .story:nth-child(3n){transform:rotate(-.3deg)}#story-grid .story:hover,#story-grid .story:focus-visible{transform:rotate(0deg) translateY(-2px)}}
+@media(max-width:380px){#story-grid{grid-template-columns:1fr}#story-grid .story{min-height:205px}}
+@media(prefers-reduced-motion:reduce){#story-grid .story{transition:none}#story-grid .story,#story-grid .story:nth-child(n),#story-grid .story:hover,#story-grid .story:focus-visible{transform:none}}
