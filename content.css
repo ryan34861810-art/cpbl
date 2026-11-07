@@ -52,3 +52,9 @@
 .video-copy h2{margin-top:0}
 @media(max-width:900px){.content-hero h1{font-size:35px}.content-hero-copy>p{font-size:13px}.masthead-body{gap:25px}}
 @media(max-width:650px){.content-hero h1{font-size:30px;line-height:1.5}.content-hero-copy>p{font-size:13px;line-height:2}.masthead-body{padding:27px 0;gap:25px}.masthead-art{width:120px;align-self:flex-start;margin:0}.podcast-note h3{font-size:19px}}
+
+.social-bar{justify-content:flex-start;gap:28px}
+.social-bar>.eyebrow{flex-shrink:0}
+.social-bar>div{gap:20px}
+.diary-date strong{font-family:'Noto Sans TC',sans-serif;font-weight:900;font-variant-numeric:tabular-nums}
+@media(max-width:650px){.social-bar{flex-direction:row;align-items:center;flex-wrap:wrap;gap:14px 20px}.social-bar>div{gap:16px}}
