@@ -21,9 +21,9 @@
 .video-mark{display:flex;align-items:center;gap:12px;color:var(--red)}.video-mark svg{width:50px;height:35px}.video-mark>span{font-size:10px;letter-spacing:2px;color:var(--paper)}
 .video-copy h2,.author-section h2{font-size:27px;line-height:1.5;margin:15px 0}
 .video-copy p,.author-section p{font-size:13px;line-height:2;margin:0 0 25px}.video-copy p{color:#d1dce0}.video-cta{background:var(--red);padding:12px 18px}
-.author-section{padding:32px;border:1px solid var(--line);background:#eeece2;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.author-section p{color:var(--muted)}.author-section .primary{margin-top:10px;font-size:12px;padding:12px 18px}
+.author-section{padding:32px;border:1px solid var(--line);background:#ffffff;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.author-section p{color:var(--muted)}.author-section .primary{margin-top:10px;font-size:12px;padding:12px 18px}
 .diary-feature{display:flex;align-items:center;gap:30px;padding:26px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 0 40px}
-.diary-date{width:155px;flex-shrink:0;padding:16px;background:#edeae0;text-align:center}.diary-date span,.diary-date small{display:block;font-size:8px;letter-spacing:1px}.diary-date strong{display:block;padding:9px 0;color:var(--red);font-size:29px;font-weight:900}
+.diary-date{width:155px;flex-shrink:0;padding:16px;background:#ffffff;text-align:center}.diary-date span,.diary-date small{display:block;font-size:8px;letter-spacing:1px}.diary-date strong{display:block;padding:9px 0;color:var(--red);font-size:29px;font-weight:900}
 .diary-feature h2{font-size:23px;line-height:1.6}.diary-feature p{font-size:12px;line-height:1.9;color:var(--muted)}.diary-feature-link{font-size:12px;font-weight:700}.diary-feature:hover .diary-feature-link{color:var(--red)}
 .about-section{display:grid;grid-template-columns:1fr 1.5fr;gap:40px;padding:5px 0 40px}.about-section h2{font-size:25px}.about-section p{font-size:13px;line-height:2.2;color:var(--muted);margin:0}
 .social-bar{padding:24px 0 32px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px}.social-bar>div{display:flex;flex-wrap:wrap;gap:22px}.social-link{font-weight:600}.social-link:hover,.small-links a:hover{color:var(--red)}
