@@ -133,3 +133,11 @@ html[data-theme="dark"] #story-grid .story:hover,html[data-theme="dark"] #story-
 @media(max-width:650px){#story-grid{gap:20px 15px;padding:14px 5px 20px}#story-grid .story{padding:18px 15px;min-height:250px;transform:rotate(-.5deg);border-radius:16px}#story-grid .story:nth-child(2n){transform:rotate(.5deg)}#story-grid .story:nth-child(3n){transform:rotate(-.3deg)}#story-grid .story:hover,#story-grid .story:focus-visible{transform:rotate(0deg) translateY(-2px)}}
 @media(max-width:380px){#story-grid{grid-template-columns:1fr}#story-grid .story{min-height:205px}}
 @media(prefers-reduced-motion:reduce){#story-grid .story{transition:none}#story-grid .story,#story-grid .story:nth-child(n),#story-grid .story:hover,#story-grid .story:focus-visible{transform:none}}
+
+/* Archive cards stay straight until interaction. */
+#story-grid .story,#story-grid .story:nth-child(n){transform:none}
+#story-grid .story:hover,#story-grid .story:focus-visible{transform:translateY(-4px) rotate(-1deg);border-color:rgba(227,67,21,.25);box-shadow:0 12px 30px rgba(227,67,21,.10),0 0 24px rgba(227,67,21,.09),inset 0 1px 0 rgba(255,255,255,.95)}
+#story-grid .story:nth-child(2n):hover,#story-grid .story:nth-child(2n):focus-visible{transform:translateY(-4px) rotate(1deg)}
+html[data-theme="dark"] #story-grid .story:hover,html[data-theme="dark"] #story-grid .story:focus-visible{box-shadow:0 12px 30px rgba(227,67,21,.13),0 0 26px rgba(255,91,57,.10),inset 0 1px 0 rgba(255,255,255,.09)}
+@media(hover:none){#story-grid .story:hover,#story-grid .story:nth-child(n):hover{transform:none}}
+@media(prefers-reduced-motion:reduce){#story-grid .story:hover,#story-grid .story:nth-child(n):hover,#story-grid .story:focus-visible,#story-grid .story:nth-child(n):focus-visible{transform:none}}
