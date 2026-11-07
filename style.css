@@ -97,3 +97,17 @@ header .header-navigation .page-switcher a:hover{border:0}
 .date-big{height:205px}
 @media(max-width:650px){header .header-navigation .page-switcher{width:300px;max-width:100%;gap:0}.date-big strong{font-size:112px}.date-big{height:180px}.scorecard{min-height:300px}}
 @media(prefers-reduced-motion:reduce){header .page-switcher:before,header .page-switcher a{transition:none}}
+
+/* Contribution buttons, date format and shared social links */
+.contribution-prompt{justify-content:flex-start;flex-direction:column;align-items:flex-start;gap:12px}
+.contribution-prompt .contribution-open{background:var(--ink);color:#ffffff;border-color:var(--ink)}
+.contribution-prompt .contribution-open:hover{background:#0a6073;border-color:#0a6073}
+.date-big{gap:0;align-items:center;justify-content:center}
+.date-big>span{writing-mode:horizontal-tb;font-size:96px;line-height:1;font-weight:900;letter-spacing:-3px}
+.date-big strong{font-size:96px;line-height:1;letter-spacing:-3px}
+.scorecard .field{height:155px;bottom:-24px;stroke:#ffffff3b;pointer-events:none}
+.social-bar{padding:24px 0 32px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:flex-start;gap:28px}
+.social-bar>.eyebrow{flex-shrink:0}.social-bar>div{display:flex;flex-wrap:wrap;gap:20px}
+.social-link{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:600}
+.social-link svg{width:24px;height:24px;flex-shrink:0}.social-link:hover{color:var(--red)}
+@media(max-width:650px){.date-big>span,.date-big strong{font-size:80px}.contribution-prompt{align-items:flex-start;flex-direction:column;gap:12px}.social-bar{flex-wrap:wrap;gap:14px 20px}.social-bar>div{gap:16px}.social-link{font-size:11px}}
