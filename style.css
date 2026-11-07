@@ -105,9 +105,15 @@ header .header-navigation .page-switcher a:hover{border:0}
 .date-big{gap:0;align-items:center;justify-content:center}
 .date-big>span{writing-mode:horizontal-tb;font-size:96px;line-height:1;font-weight:900;letter-spacing:-3px}
 .date-big strong{font-size:96px;line-height:1;letter-spacing:-3px}
-.scorecard .field{height:155px;bottom:-24px;stroke:#ffffff3b;pointer-events:none}
+.scorecard .field{height:210px;bottom:-23px;left:0;width:100%;fill:none;stroke:#ffffff3b;stroke-width:1;pointer-events:none}
 .social-bar{padding:24px 0 32px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:flex-start;gap:28px}
 .social-bar>.eyebrow{flex-shrink:0}.social-bar>div{display:flex;flex-wrap:wrap;gap:20px}
 .social-link{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:600}
 .social-link svg{width:24px;height:24px;flex-shrink:0}.social-link:hover{color:var(--red)}
 @media(max-width:650px){.date-big>span,.date-big strong{font-size:80px}.contribution-prompt{align-items:flex-start;flex-direction:column;gap:12px}.social-bar{flex-wrap:wrap;gap:14px 20px}.social-bar>div{gap:16px}.social-link{font-size:11px}}
+
+/* Restore the original scorecard and field proportions. */
+.scorecard{min-height:430px}
+.date-big{height:181px}
+@media(max-width:900px){.scorecard{min-height:400px}}
+@media(max-width:650px){.scorecard{min-height:350px}.date-big{height:145px}.scorecard .field{height:170px}}
