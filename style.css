@@ -151,3 +151,8 @@ html[data-theme="dark"] #story-grid .story:hover,html[data-theme="dark"] #story-
 .scorecard .field{height:265px;bottom:10px}
 @media(max-width:900px){.scorecard{min-height:450px}}
 @media(max-width:650px){.scorecard{min-height:405px}.scorecard .field{height:225px;bottom:10px}}
+
+/* Leave breathing room between the field and the date divider. */
+.scorecard{min-height:510px}
+@media(max-width:900px){.scorecard{min-height:490px}}
+@media(max-width:650px){.scorecard{min-height:445px}}
