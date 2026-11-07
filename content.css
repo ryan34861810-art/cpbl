@@ -16,10 +16,7 @@
 
 .small-links a,.social-link{display:inline-flex;align-items:center;gap:8px}
 .small-links svg,.social-link svg{width:23px;height:23px;flex-shrink:0}
-.content-home [role="tabpanel"]{min-height:50vh}
-.content-home [role="tabpanel"]:focus{outline:none}
-.content-home [role="tabpanel"][hidden]{display:none!important}
-.content-home #panel-video{padding:45px 0}
+
 .author-section{max-width:780px;margin:0 auto;padding:70px 0 90px}
 .author-section h2{font-size:36px;line-height:1.6}
 .author-section p{font-size:14px;line-height:2;color:var(--muted);margin:20px 0 30px}
