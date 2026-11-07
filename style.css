@@ -71,3 +71,14 @@ header .page-switcher a.current:after{content:'';position:absolute;height:3px;ba
 header .page-switcher a:hover{color:var(--ink);border:0}
 header .section-navigation{font-size:11px}
 @media(max-width:650px){header .page-switcher a{padding:5px 0 11px}header .header-navigation .page-switcher{gap:30px;width:100%}}
+
+/* Shared rounded surfaces */
+:root{--radius-card:18px;--radius-control:10px}
+.scorecard,.empty,.calendar-box,.contribution-form,dialog,.channel-section,.diary-feature{border-radius:var(--radius-card)}
+button,.primary,.more,.channel-link,.search,select,input,textarea,.contribution-open{border-radius:var(--radius-control)}
+.contribution-form textarea{border-radius:var(--radius-control)}
+.day{border-radius:8px}
+.story{border-radius:12px}
+header .page-switcher{border-radius:10px}
+header .page-switcher a{border-radius:8px}
+.brand-logo,.channel-logo{border-radius:12px}
