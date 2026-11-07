@@ -30,3 +30,9 @@ html[data-theme="dark"] dialog{background:var(--surface)}
 html[data-theme="dark"] dialog::backdrop{background:#000000b8}
 @media(max-width:1000px){header:has(.appearance-control){flex-wrap:wrap;gap:20px}.appearance-control{order:2}.header-navigation{order:3;width:100%}.content-home .header-navigation nav{order:initial}}
 @media(max-width:650px){.appearance-control{gap:4px}.appearance-control select{font-size:10px;max-width:155px;padding:8px 5px}.appearance-control>svg{width:16px;height:16px}header:has(.appearance-control)>.brand{font-size:20px}header:has(.appearance-control)>.brand .brand-en{display:none}header:has(.appearance-control){gap:16px 8px}}
+
+html[data-theme="dark"] .search,html[data-theme="dark"] .story,html[data-theme="dark"] .month-control button,html[data-theme="dark"] .more{background:var(--surface);color:var(--ink)}
+html[data-theme="dark"] .calendar-box,html[data-theme="dark"] .empty,html[data-theme="dark"] .search,html[data-theme="dark"] .story,html[data-theme="dark"] .month-control button,html[data-theme="dark"] .more{border-color:var(--line)}
+html[data-theme="dark"] .event-row,html[data-theme="dark"] .text-button,html[data-theme="dark"] #close-detail,html[data-theme="dark"] #close-contribution{color:var(--ink)}
+html[data-theme="dark"] #contribution-dialog .contribution-form{background:transparent}
+html[data-theme="dark"] .scorecard .date-big{color:#ffffff}
